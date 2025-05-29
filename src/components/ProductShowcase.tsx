@@ -26,43 +26,43 @@ const ProductShowcase: React.FC = () => {
       id: 3,
       name: 'PVC Laminates',
       description: 'Durable and water-resistant laminates for kitchens and bathrooms.',
-      image: '/Image/pvc-laminate.jpeg'
+      image: '/images/pvc-laminate.jpeg'
     },
     {
       id: 4,
       name: 'Adhesives & Glues',
       description: 'Fevicol Heatx and other strong adhesives for perfect bonding.',
-      image: '/Image/Heatx.jpg'
+      image: '/images/Heatx.jpg'
     },
     {
       id: 5,
       name: 'Tikwood & Salwood',
       description: 'Natural wood for beautiful furniture and decorative elements.',
-      image: 'https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+      image: '/images/salwood.jpeg'
     },
     {
       id: 6,
       name: 'MDF Boards',
       description: 'Versatile medium-density fiberboard for various applications.',
-      image: '/Image/Mdf_boards.jpeg'
+      image: '/images/Mdf_boards.jpeg'
     },
     {
       id: 7,
       name: 'Fevicool Marine',
       description: 'Premium marine-grade adhesive for underwater applications and wet environments.',
-      image: '/Image/fevicool-marine.jpg'
+      image: '/images/fevicool-marine.jpg'
     },
     {
       id: 8,
       name: 'Abro tape',
       description: 'High-strength double-sided tape for permanent bonding and mounting.',
-      image: '/Image/abro-tape.jpg'
+      image: '/images/abro-tape.jpg'
     },
     {
       id: 9,
       name: 'Super Grip Bond',
       description: 'Extra strong bonding solution for various surfaces including metal, plastic, and wood.',
-      image: '/Image/super-grip-bond.jpg'
+      image: '/images/super-grip-bond.jpg'
     }
   ];
 

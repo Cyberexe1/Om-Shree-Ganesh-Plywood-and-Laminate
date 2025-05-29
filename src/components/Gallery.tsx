@@ -14,37 +14,37 @@ const Gallery: React.FC = () => {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      image: '/Image/Front_view_of_Shop.webp',
+      image: '/images/Front_view_of_Shop.webp',
       title: 'Front View of Our Shop',
       category: 'Shop'
     },
     {
       id: 2,
-      image: '/Image/2024-12-15.webp',
+      image: '/images/2024-12-15.webp',
       title: 'Shop Interior',
       category: 'Interior'
     },
     {
       id: 3,
-      image: '/Image/2024-12-15 (1).webp',
+      image: '/images/2024-12-15 (1).webp',
       title: 'Product Display',
       category: 'Products'
     },
     {
       id: 4,
-      image: '/Image/2025-05-23.webp',
+      image: '/images/2025-05-23.webp',
       title: 'Plywood Collection',
       category: 'Plywood'
     },
     {
       id: 5,
-      image: '/Image/2025-05-23 (1).webp',
+      image: '/images/2025-05-23 (1).webp',
       title: 'Laminate Showcase',
       category: 'Laminates'
     },
     {
       id: 6,
-      image: '/Image/unnamed.webp',
+      image: '/images/unnamed.webp',
       title: 'Custom Designs',
       category: 'Custom'
     },

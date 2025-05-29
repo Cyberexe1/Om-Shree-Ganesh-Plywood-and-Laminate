@@ -5,13 +5,13 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-16" 
       style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/Image/Front_view_of_Shop.webp")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/Front_view_of_Shop.webp")',
         backgroundAttachment: 'fixed'
       }}>
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fadeIn">
-            <span className="block">Om Shree Ganesh</span>
+            <span className="block">Om Shree Ganesh Plywood</span>
             <span className="block mt-2 text-amber">Plywood And Laminate</span>
           </h1>
           
