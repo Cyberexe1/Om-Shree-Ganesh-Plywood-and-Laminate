@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #5D4037;
+  --color-secondary: #8D6E63;
+  --color-accent: #FFAB00;
+  --color-cream: #FFF8E1;
+  --color-light-wood: #F5F0E5;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-accent text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-amber-600 transition-all transform hover:-translate-y-1 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-white text-primary font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition-all transform hover:-translate-y-1 hover:shadow-lg;
+}
+
+.btn-tertiary {
+  @apply bg-transparent text-white font-medium px-6 py-3 rounded-full border border-white hover:bg-white/10 transition-all transform hover:-translate-y-1;
+}
+
+/* Animation classes */
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
