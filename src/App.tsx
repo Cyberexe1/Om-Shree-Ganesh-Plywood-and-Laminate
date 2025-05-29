@@ -13,17 +13,19 @@ import FloatingActionButton from './components/FloatingActionButton';
 
 function App() {
   return (
-    <div className="min-h-screen bg-cream">
-      <Navbar />
-      <Hero />
-      <ProductShowcase />
-      <WhyChooseUs />
-      <AboutUs />
-      <Gallery />
-      <Testimonials />
-      <Contact />
-      <Footer />
-      <FloatingActionButton />
+    <div className="min-h-screen bg-cream overflow-x-hidden">
+      <div className="w-full overflow-hidden">
+        <Navbar />
+        <Hero />
+        <ProductShowcase />
+        <WhyChooseUs />
+        <AboutUs />
+        <Gallery />
+        <Testimonials />
+        <Contact />
+        <Footer />
+        <FloatingActionButton />
+      </div>
     </div>
   );
 }
