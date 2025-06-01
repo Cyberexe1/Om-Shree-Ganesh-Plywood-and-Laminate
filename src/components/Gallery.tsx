@@ -50,43 +50,37 @@ const Gallery: React.FC = () => {
     },
     {
       id: 7,
-      image: '/Image/Heatx.jpg',
+      image: 'https://lh3.googleusercontent.com/p/AF1QipMtb0X6JQdqGFOB2Xx5QfHEQyOWh5BS3Glo3us=s680-w680-h510-rw',
       title: 'Fevicol Heatx Adhesive',
       category: 'Adhesives'
     },
     {
       id: 8,
-      image: '/Image/Mdf_boards.jpeg',
+      image: 'https://lh3.googleusercontent.com/p/AF1QipNERYeKMjLcaORxAd9TmReTf1K9Tlll9b3IOz4=s680-w680-h510-rw',
       title: 'MDF Board Selection',
       category: 'Boards'
     },
     {
       id: 9,
-      image: '/Image/abro-tape.jpg',
+      image: 'https://lh3.googleusercontent.com/p/AF1QipNhv4ZykxCp7JdZ_UWNfbtAPefUkGVFau8_fcE=s680-w680-h510-rw',
       title: 'Abro Double-Sided Tape',
       category: 'Tapes'
     },
     {
       id: 10,
-      image: '/Image/fevicool-marine.jpg',
+      image: 'https://lh3.googleusercontent.com/p/AF1QipNiT5jONHHasoxu3GEBuUDzHgt34Xlu2qMO41w=s680-w680-h510-rw',
       title: 'Fevicool Marine Adhesive',
       category: 'Adhesives'
     },
     {
       id: 11,
-      image: '/Image/pvc-laminate.jpeg',
+      image: 'https://homewoodindia.in/wp-content/uploads/2022/09/pvc-laminated-sheet-new.png',
       title: 'PVC Laminates',
       category: 'Laminates'
     },
     {
       id: 12,
-      image: '/Image/salwood.jpeg',
-      title: 'Salwood Collection',
-      category: 'Wood'
-    },
-    {
-      id: 13,
-      image: '/Image/super-grip-bond.jpg',
+      image: 'https://lh3.googleusercontent.com/p/AF1QipMZPvGlQgxZItHqj3LrrPoQAn_DHRXA-Ir4AF8=s680-w680-h510-rw',
       title: 'Super Grip Bond Adhesive',
       category: 'Adhesives'
     },
