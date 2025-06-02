@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fadeIn">
             <span className="block">Om Shree Ganesh Plywood</span>
-            <span className="block mt-2 text-amber">Plywood And Laminate</span>
+            <span className="block mt-2 text-amber">And Laminate</span>
           </h1>
           
           <p className="text-xl text-gray-200 mb-8 animate-fadeInUp">
