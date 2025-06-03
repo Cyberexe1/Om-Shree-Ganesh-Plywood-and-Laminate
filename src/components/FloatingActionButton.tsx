@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneCall, MessageSquare } from 'lucide-react';
+import { PhoneCall } from 'lucide-react';
 
 const FloatingActionButton: React.FC = () => {
   return (
@@ -8,8 +8,14 @@ const FloatingActionButton: React.FC = () => {
         href="https://wa.me/918087475826" 
         className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
         aria-label="Chat on WhatsApp"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <MessageSquare size={24} />
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" 
+          alt="WhatsApp" 
+          className="w-6 h-6" 
+        />
       </a>
       
       <a 
