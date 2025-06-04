@@ -57,8 +57,8 @@ const Gallery: React.FC = () => {
     {
       id: 8,
       image: 'https://lh3.googleusercontent.com/p/AF1QipNERYeKMjLcaORxAd9TmReTf1K9Tlll9b3IOz4=s680-w680-h510-rw',
-      title: 'MDF Board Selection',
-      category: 'Boards'
+      title: 'Paintable Wall Moulds',
+      category: 'Wall Moulds'
     },
     {
       id: 9,
