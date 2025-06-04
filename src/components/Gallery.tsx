@@ -33,8 +33,8 @@ const Gallery: React.FC = () => {
     {
       id: 4,
       image: '/images/2025-05-23.webp',
-      title: 'Plywood Collection',
-      category: 'Plywood'
+      title: 'Laminate Collection',
+      category: 'Laminates'
     },
     {
       id: 5,
