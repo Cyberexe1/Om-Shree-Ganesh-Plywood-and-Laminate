@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Clock, Mail, Send, Loader2, CheckCircle, XCircle } from 'lucide-react';
+import DeveloperProfile from './DeveloperProfile';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -238,6 +239,7 @@ const Contact: React.FC = () => {
             title="Om Shree Ganesh Plywood and Laminates"
           ></iframe>
         </div>
+        <DeveloperProfile />
       </div>
     </section>
   );
