@@ -2,57 +2,72 @@ import React from 'react';
 
 const AboutUs: React.FC = () => {
   return (
-    <section id="about" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1605390044035-36f50ff9cfd6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Our Shop" 
-                className="rounded-lg shadow-lg w-[800px] h-[600px]"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-accent text-white p-4 rounded-lg shadow-lg hidden md:block">
-                <p className="font-bold text-xl">Serving Since 2020</p>
+    <section id="about" className="py-20 md:py-[80px] px-6 max-w-[1280px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        {/* Image Side */}
+        <div className="relative">
+          {/* Decorative border */}
+          <div className="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-3xl -z-10 hidden md:block" />
+
+          {/* Main Image */}
+          <img
+            src="/images/Front_view_of_Shop.webp"
+            alt="Om Shree Ganesh Plywood Shop"
+            className="rounded-3xl card-shadow w-full h-[400px] md:h-[500px] object-cover"
+          />
+
+          {/* Floating Card */}
+          <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 bg-white p-4 md:p-6 rounded-2xl shadow-xl max-w-xs">
+            <div className="flex items-center gap-4 mb-2">
+              <div className="bg-secondary/10 p-2 rounded-full">
+                <span className="material-symbols-outlined text-secondary">handshake</span>
+              </div>
+              <span className="font-bold text-primary font-body">Reliable Quality</span>
+            </div>
+            <p className="text-label-sm text-on-surface-variant font-body">
+              Certified IS 710 and IS 303 quality materials.
+            </p>
+          </div>
+        </div>
+
+        {/* Content Side */}
+        <div>
+          {/* Label */}
+          <span className="text-secondary font-body text-label-md uppercase tracking-widest block mb-4">
+            Our Story
+          </span>
+
+          {/* Heading */}
+          <h2 className="font-headline text-headline-md text-primary mb-6">
+            Legacy of trust in Mumbai's hardware market
+          </h2>
+
+          {/* Description */}
+          <p className="font-body text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+            Om Shree Ganesh Plywood & Laminate started with a simple vision: to provide high-quality
+            building materials to the local community of Kandivali West. Over the years, we've grown
+            into a destination for architects and homeowners across Mumbai seeking premium plywood,
+            designer laminates, and reliable hardware.
+          </p>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-surface-container p-6 rounded-2xl border border-outline-variant/10 text-center">
+              <div className="font-headline text-headline-sm text-secondary">100%</div>
+              <div className="text-label-sm uppercase font-bold text-on-surface/60 font-body mt-1">
+                Authentic
               </div>
             </div>
-          </div>
-          
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Our Story</h2>
-            
-            <p className="text-gray-700 mb-4">
-              Welcome to <span className="font-semibold">Om Shree Ganesh Plywood And Laminate</span>, 
-              where quality meets craftsmanship. For over two decades, we've been a trusted name in 
-              providing premium plywood, laminates, and interior materials to homeowners, 
-              contractors, and businesses.
-            </p>
-            
-            <p className="text-gray-700 mb-4">
-              What started as a small family business has grown into a comprehensive 
-              destination for all your interior construction needs. Our journey has been 
-              built on the foundation of trust, quality, and customer satisfaction.
-            </p>
-            
-            <p className="text-gray-700 mb-6">
-              We take pride in offering an extensive range of products, from top-grade 
-              plywood and designer laminates to essential hardware and adhesives. Our team is 
-              dedicated to helping you find the perfect materials for your projects, 
-              whether you're building a new home or renovating an existing space.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="bg-light-wood p-4 rounded-lg text-center">
-                <p className="text-3xl font-bold text-primary">5+</p>
-                <p className="text-gray-700">Years Experience</p>
+            <div className="bg-surface-container p-6 rounded-2xl border border-outline-variant/10 text-center">
+              <div className="font-headline text-headline-sm text-secondary">5k+</div>
+              <div className="text-label-sm uppercase font-bold text-on-surface/60 font-body mt-1">
+                Sheets Sold
               </div>
-              <div className="bg-light-wood p-4 rounded-lg text-center">
-                <p className="text-3xl font-bold text-primary">500+</p>
-                <p className="text-gray-700">Happy Customers</p>
-              </div>
-              <div className="bg-light-wood p-4 rounded-lg text-center">
-                <p className="text-3xl font-bold text-primary">30+</p>
-                <p className="text-gray-700">Products</p>
+            </div>
+            <div className="bg-surface-container p-6 rounded-2xl border border-outline-variant/10 text-center">
+              <div className="font-headline text-headline-sm text-secondary">24h</div>
+              <div className="text-label-sm uppercase font-bold text-on-surface/60 font-body mt-1">
+                Quotes
               </div>
             </div>
           </div>

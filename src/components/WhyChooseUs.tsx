@@ -1,9 +1,8 @@
 import React from 'react';
-import { Award, Package, Truck, ThumbsUp, Tags, Clock } from 'lucide-react';
 
 type Feature = {
   id: number;
-  icon: React.ReactNode;
+  icon: string;
   title: string;
   description: string;
 };
@@ -12,65 +11,65 @@ const WhyChooseUs: React.FC = () => {
   const features: Feature[] = [
     {
       id: 1,
-      icon: <Award size={40} className="text-accent" />,
-      title: 'Premium Materials Guaranteed',
-      description: 'We source and sell only the highest quality plywood, laminates, and hardware that meet industry standards.'
+      icon: 'verified',
+      title: 'Premium Materials',
+      description: 'We only stock materials that meet rigorous quality standards for durability and finish.',
     },
     {
       id: 2,
-      icon: <Package size={40} className="text-accent" />,
+      icon: 'inventory_2',
       title: 'Wide Product Range',
-      description: 'Find everything you need under one roof, from plywood and laminates to adhesives and fixtures.'
+      description: 'From basic plywood to designer laminates, find everything under one roof.',
     },
     {
       id: 3,
-      icon: <Tags size={40} className="text-accent" />,
-      title: 'Competitive Pricing',
-      description: 'Get the best value for your money with our transparent and competitive pricing structure.'
+      icon: 'local_shipping',
+      title: 'Timely Delivery',
+      description: 'Reliable delivery service across Mumbai to keep your project on schedule.',
     },
     {
       id: 4,
-      icon: <Truck size={40} className="text-accent" />,
-      title: 'Fast Delivery Available',
-      description: 'We offer prompt delivery services to ensure your projects stay on schedule.'
+      icon: 'payments',
+      title: 'Unbeatable Prices',
+      description: 'Direct sourcing allows us to offer the most competitive rates in Kandivali.',
     },
     {
       id: 5,
-      icon: <ThumbsUp size={40} className="text-accent" />,
+      icon: 'psychology',
       title: 'Expert Advice',
-      description: 'Our knowledgeable team provides expert guidance to help you make informed decisions.'
+      description: 'Confused about materials? Our team provides free consultation for your needs.',
     },
     {
       id: 6,
-      icon: <Clock size={40} className="text-accent" />,
-      title: 'Bulk Order Discounts',
-      description: 'Special pricing available for bulk orders, perfect for contractors and large projects.'
+      icon: 'eco',
+      title: 'Sustainable Sourcing',
+      description: 'We prioritize eco-friendly boards and sustainable timber practices.',
     },
   ];
 
   return (
-    <section className="py-16 bg-light-wood">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Why Choose Us</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We've built our reputation on quality, reliability, and exceptional service.
-          </p>
+    <section id="why-us" className="py-20 md:py-[80px] bg-surface-container-low">
+      <div className="max-w-[1280px] mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="font-headline text-headline-md text-primary mb-4">
+            Why Architects & Homeowners Choose Us
+          </h2>
+          <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
         </div>
 
+        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature) => (
-            <div 
+            <div
               key={feature.id}
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-white p-8 rounded-3xl card-shadow border border-outline-variant/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
             >
-              <div className="flex flex-col items-center text-center">
-                <div className="mb-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-primary">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
+              <span className="material-symbols-outlined text-secondary text-4xl mb-6 block">
+                {feature.icon}
+              </span>
+              <h4 className="font-headline text-headline-sm text-primary mb-2">{feature.title}</h4>
+              <p className="text-on-surface-variant font-body text-body-md">{feature.description}</p>
             </div>
           ))}
         </div>

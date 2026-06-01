@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 type Testimonial = {
   id: number;
@@ -16,109 +16,97 @@ const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: 'Rajesh Kumar',
-      role: 'Interior Designer',
-      comment: 'Om Shree Ganesh has been my go-to supplier for all plywood and laminate needs. Their quality is consistently excellent, and their pricing is very competitive.',
-      rating: 5
+      name: 'Rajesh Mehta',
+      role: 'Homeowner',
+      comment:
+        'Best place in Kandivali for laminates. They have a huge catalogue and the owner is very helpful in suggesting combinations. Highly recommended!',
+      rating: 5,
     },
     {
       id: 2,
       name: 'Priya Sharma',
-      role: 'Home Owner',
-      comment: 'I renovated my entire kitchen with materials from Om Shree Ganesh. The team was extremely helpful in guiding me through the selection process. Very satisfied!',
-      rating: 5
+      role: 'Interior Designer',
+      comment:
+        'I renovated my entire kitchen with materials from Om Shree Ganesh. The team was extremely helpful in guiding me through the selection process. Very satisfied!',
+      rating: 5,
     },
     {
       id: 3,
       name: 'Vikram Singh',
       role: 'Carpenter',
-      comment: 'As a professional carpenter, I need reliable materials. Om Shree Ganesh provides excellent quality plywood that is easy to work with and stands the test of time.',
-      rating: 4
+      comment:
+        'As a professional carpenter, I need reliable materials. Om Shree Ganesh provides excellent quality plywood that is easy to work with and stands the test of time.',
+      rating: 5,
     },
   ];
 
-  // Check if screen is mobile size
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
+    const checkScreenSize = () => setIsMobile(window.innerWidth < 768);
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
-    
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
-  // Auto-slide functionality for mobile
   useEffect(() => {
     if (!isMobile) return;
-    
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % testimonials.length);
     }, 5000);
-    
     return () => clearInterval(interval);
   }, [isMobile, testimonials.length]);
 
-  const renderStars = (rating: number) => {
-    return Array(5).fill(0).map((_, i) => (
-      <Star 
-        key={i} 
-        size={18} 
-        className={i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'} 
-      />
-    ));
-  };
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
+  const renderStars = (rating: number) => (
+    <div className="flex text-secondary mb-4">
+      {Array(5)
+        .fill(0)
+        .map((_, i) => (
+          <span
+            key={i}
+            className="material-symbols-outlined"
+            style={{ fontVariationSettings: i < rating ? "'FILL' 1" : "'FILL' 0" }}
+          >
+            star
+          </span>
+        ))}
+    </div>
+  );
 
   const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
-    <div className="bg-orange-50 rounded-lg p-6 shadow-md relative min-h-[280px] flex flex-col">
-      <div className="absolute -top-4 -left-4 text-orange-600 opacity-20">
-        <Quote size={48} />
-      </div>
-      <div className="mb-4 flex">
-        {renderStars(testimonial.rating)}
-      </div>
-      <p className="text-gray-700 mb-6 relative z-10 flex-grow">"{testimonial.comment}"</p>
-      <div className="border-t border-gray-300 pt-4 mt-auto">
-        <p className="font-semibold text-orange-800">{testimonial.name}</p>
-        <p className="text-gray-600 text-sm">{testimonial.role}</p>
+    <div className="bg-white p-8 rounded-3xl card-shadow italic relative min-h-[280px] flex flex-col">
+      <span className="absolute top-4 right-8 text-secondary/20 text-6xl font-serif not-italic">"</span>
+      {renderStars(testimonial.rating)}
+      <p className="text-on-surface-variant mb-6 leading-relaxed font-body text-body-md flex-grow not-italic">
+        "{testimonial.comment}"
+      </p>
+      <div className="border-t border-outline-variant/30 pt-4 mt-auto not-italic">
+        <p className="font-bold text-primary font-body">— {testimonial.name}</p>
+        <p className="text-on-surface-variant text-label-sm font-body">{testimonial.role}</p>
       </div>
     </div>
   );
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">What Our Customers Say</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about their experience with us.
-          </p>
+    <section className="py-20 md:py-[80px] bg-surface-container-low px-6">
+      <div className="max-w-[1280px] mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="font-headline text-headline-md text-primary">What Our Clients Say</h2>
         </div>
 
-        {/* Desktop Grid View */}
+        {/* Desktop Grid */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
 
-        {/* Mobile Slider View */}
+        {/* Mobile Slider */}
         <div className="md:hidden relative">
-          <div className="overflow-hidden rounded-lg">
-            <div 
+          <div className="overflow-hidden rounded-3xl">
+            <div
               className="flex transition-transform duration-300 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
@@ -130,31 +118,30 @@ const Testimonials: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-50 transition-colors z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-card hover:bg-surface-container-low transition-colors z-10"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft size={20} className="text-orange-600" />
+            <ChevronLeft size={20} className="text-secondary" />
           </button>
-          
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-50 transition-colors z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-card hover:bg-surface-container-low transition-colors z-10"
             aria-label="Next testimonial"
           >
-            <ChevronRight size={20} className="text-orange-600" />
+            <ChevronRight size={20} className="text-secondary" />
           </button>
 
-          {/* Dots Indicator */}
+          {/* Dots */}
           <div className="flex justify-center mt-6 space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                onClick={() => goToSlide(index)}
+                onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentSlide ? 'bg-orange-600' : 'bg-gray-300'
+                  index === currentSlide ? 'bg-secondary' : 'bg-outline-variant'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

@@ -1,55 +1,83 @@
 import React from 'react';
-import { Phone, MessageSquare, ChevronRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-16" 
-      style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/Front_view_of_Shop.webp")',
-        backgroundAttachment: 'fixed'
-      }}>
-      <div className="container mx-auto px-4 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fadeIn">
-            <span className="block">Om Shree Ganesh Plywood</span>
-            <span className="block mt-2 text-amber">And Laminate</span>
-          </h1>
-          
-          <p className="text-xl text-gray-200 mb-8 animate-fadeInUp">
-            Your Trusted Partner for Plywood, Laminates, Adhesives & More
-          </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white">Best Prices</span>
-            <span className="hidden sm:block text-white">•</span>
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white">Superior Quality</span>
-            <span className="hidden sm:block text-white">•</span>
-            <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white">Trusted Service</span>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-            <a href="tel:+918087475826" className="btn-primary flex items-center justify-center gap-2">
-              <Phone size={18} />
-              <span>Call Now</span>
-            </a>
-            <a href="#contact" className="btn-secondary flex items-center justify-center gap-2">
-              <MessageSquare size={18} />
-              <span>Get a Quote</span>
-            </a>
-            <a href="#products" className="btn-tertiary flex items-center justify-center gap-2">
-              <span>View Products</span>
-              <ChevronRight size={18} />
-            </a>
-          </div>
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url("/images/Front_view_of_Shop.webp")' }}
+      />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 hero-gradient" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl text-center flex flex-col items-center px-6">
+        {/* Badge */}
+        <div className="bg-secondary/20 border border-secondary/30 backdrop-blur-md px-6 py-2 rounded-full mb-6">
+          <span className="text-secondary-fixed-dim font-body text-label-md flex items-center gap-2">
+            <span className="material-symbols-outlined text-[18px]">location_on</span>
+            Mumbai's Trusted Plywood Experts
+          </span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="font-headline text-display-lg-mobile md:text-display-lg text-surface-bright mb-6 leading-tight">
+          Premium Plywood & Laminates for Every Space
+        </h1>
+
+        {/* Subtitle */}
+        <p className="font-body text-body-lg text-surface-container-highest/90 mb-10 max-w-2xl">
+          Serving Kandivali West since years — quality materials, expert advice, and unbeatable prices for your dream interiors.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            href="tel:+918087475826"
+            className="border-2 border-surface-bright text-surface-bright px-8 py-4 rounded-3xl font-body text-label-md hover:bg-surface-bright hover:text-primary transition-all duration-300"
+          >
+            Call Now
+          </a>
+          <a
+            href="https://wa.me/918087475826"
+            className="bg-[#25D366] text-white px-8 py-4 rounded-3xl font-body text-label-md hover:opacity-90 transition-all duration-300 flex items-center gap-2"
+          >
+            <span className="material-symbols-outlined text-[18px]">chat</span>
+            WhatsApp Us
+          </a>
+          <a
+            href="#products"
+            className="bg-secondary text-white px-8 py-4 rounded-3xl font-body text-label-md hover:bg-on-secondary-container transition-all duration-300"
+          >
+            View Products
+          </a>
         </div>
       </div>
-      
-      <div className="hidden md:block absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-        <a href="#products" className="text-white">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </a>
+
+      {/* Stats Bar */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6">
+        <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl py-6 md:py-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div className="border-r border-white/10 px-4">
+            <div className="font-headline text-headline-sm text-secondary-fixed-dim">5+ Years</div>
+            <div className="text-surface-container-highest text-label-sm uppercase tracking-wider">Experience</div>
+          </div>
+          <div className="border-r border-white/10 px-4 hidden md:block">
+            <div className="font-headline text-headline-sm text-secondary-fixed-dim">500+</div>
+            <div className="text-surface-container-highest text-label-sm uppercase tracking-wider">Happy Customers</div>
+          </div>
+          <div className="border-r border-white/10 px-4">
+            <div className="font-headline text-headline-sm text-secondary-fixed-dim">30+</div>
+            <div className="text-surface-container-highest text-label-sm uppercase tracking-wider">Products</div>
+          </div>
+          <div className="px-4">
+            <div className="font-headline text-headline-sm text-secondary-fixed-dim">Pan-Mumbai</div>
+            <div className="text-surface-container-highest text-label-sm uppercase tracking-wider">Delivery</div>
+          </div>
+        </div>
       </div>
     </section>
   );
