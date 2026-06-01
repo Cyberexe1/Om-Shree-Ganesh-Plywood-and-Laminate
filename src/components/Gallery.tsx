@@ -80,9 +80,9 @@ const Gallery: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-headline text-headline-md text-surface-bright mb-4">Our Gallery</h2>
+          <h2 className="font-headline text-headline-md text-surface-bright mb-4">Our Showroom & Product Gallery</h2>
           <p className="text-surface-container-highest/80 font-body max-w-xl mx-auto">
-            Explore our showroom and some of the beautiful spaces created using our materials.
+            Take a virtual tour of our Kandivali West showroom — see our plywood stacks, laminate displays, and adhesive collection up close.
           </p>
         </div>
 

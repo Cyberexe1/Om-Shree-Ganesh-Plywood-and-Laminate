@@ -11,56 +11,56 @@ const ProductShowcase: React.FC = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: 'Premium Plywood',
-      description: 'High-quality, waterproof plywood for all your furniture and interior needs.',
+      name: 'Waterproof Plywood',
+      description: 'IS 710 certified, BWR-grade waterproof plywood ideal for kitchen cabinets, wardrobes, and bathroom furniture.',
       image: '/images/2024-12-15.webp',
     },
     {
       id: 2,
       name: 'Decorative Laminates',
-      description: 'Elegant designs and patterns to enhance the beauty of your furniture.',
+      description: 'Over 500 designs — wood grain, marble, solid colors. High-pressure laminates for modular furniture and wall panels.',
       image: '/images/2025-05-23.webp',
     },
     {
       id: 3,
       name: 'PVC Laminates',
-      description: 'Durable and water-resistant laminates for kitchens and bathrooms.',
+      description: 'Water-resistant, termite-proof PVC laminate sheets perfect for kitchen shutters and bathroom vanities.',
       image: '/images/pvc-laminate.jpeg',
     },
     {
       id: 4,
       name: 'Fevicol Heatx Adhesive',
-      description: 'Fevicol Heatx and other strong adhesives for perfect bonding.',
+      description: 'Heat-resistant wood adhesive for laminate bonding. Ideal for kitchen countertops exposed to high temperatures.',
       image: '/images/Heatx.jpg',
     },
     {
       id: 5,
       name: 'Tikwood & Salwood',
-      description: 'Natural wood for beautiful furniture and decorative elements.',
+      description: 'Seasoned natural timber for door frames, window frames, and premium solid-wood furniture construction.',
       image: '/images/salwood.jpeg',
     },
     {
       id: 6,
       name: 'MDF Boards',
-      description: 'Versatile medium-density fiberboard for various applications.',
+      description: 'Plain and pre-laminated MDF boards for CNC routing, wall paneling, and modular furniture manufacturing.',
       image: '/images/Mdf_boards.jpeg',
     },
     {
       id: 7,
-      name: 'Fevicool Marine',
-      description: 'Premium marine-grade adhesive for underwater and wet environments.',
+      name: 'Fevicol Marine',
+      description: 'Marine-grade waterproof adhesive for plywood bonding in high-moisture areas like bathrooms and exteriors.',
       image: '/images/fevicool-marine.jpg',
     },
     {
       id: 8,
       name: 'Abro Tape',
-      description: 'High-strength double-sided tape for permanent bonding and mounting.',
+      description: 'Industrial-strength double-sided mounting tape for mirrors, panels, and heavy-duty interior fixtures.',
       image: '/images/abro-tape.jpg',
     },
     {
       id: 9,
       name: 'Super Grip Bond',
-      description: 'Extra strong bonding solution for metal, plastic, and wood surfaces.',
+      description: 'Multi-surface contact adhesive for bonding laminates to plywood, metal, and plastic substrates.',
       image: '/images/super-grip-bond.jpg',
     },
   ];
@@ -69,9 +69,9 @@ const ProductShowcase: React.FC = () => {
     <section id="products" className="py-20 md:py-[80px] px-6 max-w-[1280px] mx-auto">
       {/* Section Header */}
       <div className="text-center mb-16">
-        <h2 className="font-headline text-headline-md text-primary mb-4">Our Material Collection</h2>
+        <h2 className="font-headline text-headline-md text-primary mb-4">Plywood, Laminates & Interior Materials</h2>
         <p className="text-on-surface-variant font-body max-w-xl mx-auto">
-          Handpicked, durable, and aesthetically superior materials sourced from the best manufacturers.
+          Browse our complete range of certified plywood, designer laminates, and construction-grade adhesives — sourced directly from top manufacturers.
         </p>
       </div>
 

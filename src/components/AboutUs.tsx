@@ -39,15 +39,12 @@ const AboutUs: React.FC = () => {
 
           {/* Heading */}
           <h2 className="font-headline text-headline-md text-primary mb-6">
-            Legacy of trust in Mumbai's hardware market
+            Kandivali West's Most Trusted Plywood & Laminate Dealer Since 2020
           </h2>
 
           {/* Description */}
           <p className="font-body text-body-lg text-on-surface-variant mb-8 leading-relaxed">
-            Om Shree Ganesh Plywood & Laminate started with a simple vision: to provide high-quality
-            building materials to the local community of Kandivali West. Over the years, we've grown
-            into a destination for architects and homeowners across Mumbai seeking premium plywood,
-            designer laminates, and reliable hardware.
+            Om Shree Ganesh Plywood & Laminate was founded with one goal: to give Kandivali's homeowners, carpenters, and interior designers access to certified, premium-grade building materials at fair prices. Today, we serve over 500 satisfied customers across Mumbai — from individual home renovations to large-scale commercial fit-outs. Every product in our showroom is hand-selected for quality, and our team provides honest, no-pressure guidance on material selection.
           </p>
 
           {/* Stats */}

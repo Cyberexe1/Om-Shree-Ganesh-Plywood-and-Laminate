@@ -26,12 +26,12 @@ const Hero: React.FC = () => {
 
         {/* Heading */}
         <h1 className="font-headline text-display-lg-mobile md:text-display-lg text-surface-bright mb-6 leading-tight">
-          Premium Plywood & Laminates for Every Space
+          Best Plywood & Laminate Shop in Kandivali West, Mumbai
         </h1>
 
         {/* Subtitle */}
         <p className="font-body text-body-lg text-surface-container-highest/90 mb-10 max-w-2xl">
-          Serving Kandivali West since years — quality materials, expert advice, and unbeatable prices for your dream interiors.
+          Premium waterproof plywood, decorative laminates, PVC sheets, MDF boards & Fevicol adhesives — all under one roof with free Mumbai delivery.
         </p>
 
         {/* CTA Buttons */}

@@ -1,0 +1,11 @@
+# robots.txt for Om Shree Ganesh Plywood & Laminate
+User-agent: *
+Allow: /
+
+# Disallow admin/dev paths
+Disallow: /src/
+Disallow: /.bolt/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://om-shree-ganesh-plywood-and-laminat.vercel.app/sitemap.xml

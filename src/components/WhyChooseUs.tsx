@@ -12,38 +12,38 @@ const WhyChooseUs: React.FC = () => {
     {
       id: 1,
       icon: 'verified',
-      title: 'Premium Materials',
-      description: 'We only stock materials that meet rigorous quality standards for durability and finish.',
+      title: 'ISI-Certified Materials',
+      description: 'Every sheet of plywood and laminate we sell meets IS 710 and IS 303 quality standards for guaranteed durability.',
     },
     {
       id: 2,
       icon: 'inventory_2',
-      title: 'Wide Product Range',
-      description: 'From basic plywood to designer laminates, find everything under one roof.',
+      title: '30+ Product Categories',
+      description: 'Plywood, laminates, PVC sheets, MDF boards, adhesives, timber, hardware — everything for your interior project.',
     },
     {
       id: 3,
       icon: 'local_shipping',
-      title: 'Timely Delivery',
-      description: 'Reliable delivery service across Mumbai to keep your project on schedule.',
+      title: 'Free Mumbai Delivery',
+      description: 'Same-day dispatch for in-stock items. Free delivery on bulk orders anywhere in Mumbai within 24–48 hours.',
     },
     {
       id: 4,
       icon: 'payments',
-      title: 'Unbeatable Prices',
-      description: 'Direct sourcing allows us to offer the most competitive rates in Kandivali.',
+      title: 'Wholesale Rates for All',
+      description: 'Direct manufacturer sourcing means you get wholesale pricing whether you buy 1 sheet or 100.',
     },
     {
       id: 5,
       icon: 'psychology',
-      title: 'Expert Advice',
-      description: 'Confused about materials? Our team provides free consultation for your needs.',
+      title: 'Free Material Consultation',
+      description: 'Not sure which grade of plywood suits your project? Our experts help you pick the right material and thickness.',
     },
     {
       id: 6,
       icon: 'eco',
-      title: 'Sustainable Sourcing',
-      description: 'We prioritize eco-friendly boards and sustainable timber practices.',
+      title: 'Eco-Friendly Options',
+      description: 'We stock E1-grade low-emission boards and FSC-certified timber for environmentally conscious builds.',
     },
   ];
 
@@ -53,7 +53,7 @@ const WhyChooseUs: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-headline text-headline-md text-primary mb-4">
-            Why Architects & Homeowners Choose Us
+            Why Mumbai's Top Carpenters & Interior Designers Choose Us
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
         </div>

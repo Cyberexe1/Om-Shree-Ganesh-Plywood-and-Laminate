@@ -65,9 +65,9 @@ const Contact: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-headline text-headline-md text-primary mb-4">Get In Touch</h2>
+          <h2 className="font-headline text-headline-md text-primary mb-4">Visit Our Shop or Get a Free Quote</h2>
           <p className="text-on-surface-variant font-body max-w-2xl mx-auto">
-            Have questions or need assistance? We're here to help. Reach out to us through any of the channels below.
+            Located on Shri Sevantilal Khandwala Marg, Kandivali West — walk in for a free consultation or send us your requirements for a same-day quote.
           </p>
         </div>
 

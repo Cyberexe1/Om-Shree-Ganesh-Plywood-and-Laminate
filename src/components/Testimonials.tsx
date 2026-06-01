@@ -93,7 +93,7 @@ const Testimonials: React.FC = () => {
       <div className="max-w-[1280px] mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-headline text-headline-md text-primary">What Our Clients Say</h2>
+          <h2 className="font-headline text-headline-md text-primary">Trusted by 500+ Homeowners & Contractors in Mumbai</h2>
         </div>
 
         {/* Desktop Grid */}
