@@ -34,6 +34,7 @@ const Footer: React.FC = () => {
                 <li><a href="#products" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Products</a></li>
                 <li><a href="#about" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">About Us</a></li>
                 <li><a href="#gallery" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Gallery</a></li>
+                <li><a href="#faq" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">FAQ</a></li>
                 <li><a href="#contact" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Contact</a></li>
               </ul>
             </div>

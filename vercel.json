@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "om-shree-ganesh-plywood-and-laminat.vercel.app" }],
+      "destination": "https://www.omshreeganeshplywood.in/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "omshreeganeshplywood.in" }],
+      "destination": "https://www.omshreeganeshplywood.in/$1",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(robots.txt|sitemap.xml|llms.txt|site.webmanifest)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

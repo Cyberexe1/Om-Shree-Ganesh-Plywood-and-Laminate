@@ -5,6 +5,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import AboutUs from './components/AboutUs';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingActionButton from './components/FloatingActionButton';
@@ -20,6 +21,7 @@ function App() {
         <AboutUs />
         <Gallery />
         <Testimonials />
+        <FAQ />
         <Contact />
         <Footer />
         <FloatingActionButton />
