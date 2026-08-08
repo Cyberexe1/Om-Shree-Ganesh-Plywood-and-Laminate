@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const VISIBLE_COUNT = 6;
 
 type Product = {
   id: number;
@@ -8,6 +10,8 @@ type Product = {
 };
 
 const ProductShowcase: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const products: Product[] = [
     {
       id: 1,
@@ -75,11 +79,13 @@ const ProductShowcase: React.FC = () => {
         </p>
       </div>
 
-      {/* Product Grid */}
+      {/* Product Grid — every card is rendered so crawlers see the full range;
+          the extras are only hidden visually until "Show more" is clicked. */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {products.map((product) => (
+        {products.map((product, index) => (
           <div
             key={product.id}
+            hidden={!showAll && index >= VISIBLE_COUNT}
             className="group bg-white rounded-3xl overflow-hidden card-shadow border border-outline-variant/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-card-hover"
           >
             {/* Image */}
@@ -106,6 +112,30 @@ const ProductShowcase: React.FC = () => {
           </div>
         ))}
       </div>
+
+      {/* Show more / less */}
+      {products.length > VISIBLE_COUNT && (
+        <div className="mt-12 text-center">
+          <button
+            type="button"
+            onClick={() => setShowAll((prev) => !prev)}
+            aria-expanded={showAll}
+            className="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-2xl font-body text-label-md hover:bg-secondary hover:text-white transition-all duration-300"
+          >
+            <span>
+              {showAll ? 'Show fewer materials' : `Show all ${products.length} materials`}
+            </span>
+            <span
+              className={`material-symbols-outlined text-[18px] transition-transform duration-300 ${
+                showAll ? 'rotate-180' : ''
+              }`}
+              aria-hidden="true"
+            >
+              expand_more
+            </span>
+          </button>
+        </div>
+      )}
     </section>
   );
 };

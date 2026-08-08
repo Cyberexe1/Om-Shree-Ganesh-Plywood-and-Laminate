@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type FaqItem = {
   question: string;
@@ -64,7 +65,7 @@ const faqs: FaqItem[] = [
   {
     question: 'How do I get a price quote?',
     answer:
-      'Call +91 8087475826, message the same number on WhatsApp, email omshreeganeshplywood@gmail.com, or send your requirement through the enquiry form on this page. Quotes are typically shared the same day, and walk-in consultations are free.',
+      'Call +91 8087475826, message the same number on WhatsApp, email omshreeganeshplywood@gmail.com, or send your requirement through the enquiry form on our homepage. Quotes are typically shared the same day, and walk-in consultations are free.',
   },
   {
     question: 'How long has Om Shree Ganesh Plywood been in business?',
@@ -82,9 +83,9 @@ const FaqSection: React.FC = () => {
           <span className="text-secondary font-body text-label-md uppercase tracking-widest block mb-4">
             Questions & Answers
           </span>
-          <h2 className="font-headline text-headline-md text-primary mb-4">
+          <h1 className="font-headline text-headline-md text-primary mb-4">
             Plywood & Laminate FAQs — Kandivali West, Mumbai
-          </h2>
+          </h1>
           <p className="text-on-surface-variant font-body max-w-2xl mx-auto">
             Straight answers on stock, plywood grades, laminate designs, delivery and pricing. Still unsure? Call
             {' '}
@@ -122,12 +123,12 @@ const FaqSection: React.FC = () => {
             Need a quote for your project? Share your sizes and finishes — we usually reply the same day.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="bg-primary-container text-on-primary-container px-8 py-4 rounded-2xl font-body text-label-md hover:bg-secondary hover:text-white transition-all duration-300"
             >
               Get a Free Quote
-            </a>
+            </Link>
             <a
               href="https://wa.me/918087475826"
               className="bg-[#25D366] text-white px-8 py-4 rounded-2xl font-body text-label-md hover:opacity-90 transition-all duration-300 flex items-center gap-2"

@@ -39,4 +39,20 @@
       <image:title>Fevicol Marine waterproof adhesive, Mumbai</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.omshreeganeshplywood.in/about</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.omshreeganeshplywood.in/images/Front_view_of_Shop.webp</image:loc>
+      <image:title>Om Shree Ganesh Plywood and Laminate, trading in Kandivali West since 2020</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.omshreeganeshplywood.in/faq</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

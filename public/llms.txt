@@ -43,12 +43,12 @@
 
 ## Key pages
 
-- [Home](https://www.omshreeganeshplywood.in/): Overview, shop location and contact options
-- [Materials](https://www.omshreeganeshplywood.in/#products): Full product range with descriptions
+- [Home](https://www.omshreeganeshplywood.in/): Overview, full material range, gallery, shop location and enquiry form
+- [About](https://www.omshreeganeshplywood.in/about): Shop history since 2020, quality standards and service commitments
+- [FAQ](https://www.omshreeganeshplywood.in/faq): Answers on stock, plywood grades, laminate designs, delivery and pricing
+- [Materials](https://www.omshreeganeshplywood.in/#products): Product range with descriptions
 - [Why choose us](https://www.omshreeganeshplywood.in/#why-us): Certifications, delivery and pricing approach
-- [About](https://www.omshreeganeshplywood.in/#about): Shop history and quality standards
 - [Gallery](https://www.omshreeganeshplywood.in/#gallery): Shop and material photos
-- [FAQ](https://www.omshreeganeshplywood.in/#faq): Answers on stock, grades, delivery and pricing
 - [Contact](https://www.omshreeganeshplywood.in/#contact): Address, phone, hours, map and enquiry form
 
 ## Citation

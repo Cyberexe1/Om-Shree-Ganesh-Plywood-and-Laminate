@@ -37,10 +37,10 @@ const AboutUs: React.FC = () => {
             Our Story
           </span>
 
-          {/* Heading */}
-          <h2 className="font-headline text-headline-md text-primary mb-6">
+          {/* Heading — this is the main heading of the /about page */}
+          <h1 className="font-headline text-headline-md text-primary mb-6">
             Kandivali West's Most Trusted Plywood & Laminate Dealer Since 2020
-          </h2>
+          </h1>
 
           {/* Description */}
           <p className="font-body text-body-lg text-on-surface-variant mb-8 leading-relaxed">

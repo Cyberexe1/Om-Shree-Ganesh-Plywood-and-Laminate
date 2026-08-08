@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -14,13 +15,29 @@ const Footer: React.FC = () => {
                 Your trusted partner for all plywood, laminates, and interior material needs since 2020.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-surface-container-highest/60 hover:text-secondary transition-colors" aria-label="Facebook">
-                  <span className="material-symbols-outlined">public</span>
+                <a
+                  href="https://maps.google.com/?cid=9628421423051136744"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-surface-container-highest/60 hover:text-secondary transition-colors"
+                  aria-label="Find us on Google Maps"
+                >
+                  <span className="material-symbols-outlined">location_on</span>
                 </a>
-                <a href="#" className="text-surface-container-highest/60 hover:text-secondary transition-colors" aria-label="Instagram">
-                  <span className="material-symbols-outlined">photo_camera</span>
+                <a
+                  href="tel:+918087475826"
+                  className="text-surface-container-highest/60 hover:text-secondary transition-colors"
+                  aria-label="Call us"
+                >
+                  <span className="material-symbols-outlined">call</span>
                 </a>
-                <a href="https://wa.me/918087475826" className="text-surface-container-highest/60 hover:text-secondary transition-colors" aria-label="WhatsApp">
+                <a
+                  href="https://wa.me/918087475826"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-surface-container-highest/60 hover:text-secondary transition-colors"
+                  aria-label="WhatsApp"
+                >
                   <span className="material-symbols-outlined">chat</span>
                 </a>
               </div>
@@ -30,12 +47,23 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="font-headline text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-3">
-                <li><a href="#home" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Home</a></li>
-                <li><a href="#products" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Products</a></li>
-                <li><a href="#about" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">About Us</a></li>
-                <li><a href="#gallery" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Gallery</a></li>
-                <li><a href="#faq" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">FAQ</a></li>
-                <li><a href="#contact" className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md">Contact</a></li>
+                {[
+                  { to: '/', label: 'Home' },
+                  { to: '/#products', label: 'Materials' },
+                  { to: '/about', label: 'About Us' },
+                  { to: '/faq', label: 'FAQ' },
+                  { to: '/#gallery', label: 'Gallery' },
+                  { to: '/#contact', label: 'Contact' },
+                ].map((link) => (
+                  <li key={link.to}>
+                    <Link
+                      to={link.to}
+                      className="text-surface-container-highest/80 hover:text-secondary transition-colors font-body text-body-md"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -88,11 +116,17 @@ const Footer: React.FC = () => {
               &copy; {new Date().getFullYear()} Om Shree Ganesh Plywood & Laminate. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-surface-container-highest/60 hover:text-secondary transition-colors font-body text-label-sm">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-surface-container-highest/60 hover:text-secondary transition-colors font-body text-label-sm">
-                Terms of Service
+              <Link
+                to="/faq"
+                className="text-surface-container-highest/60 hover:text-secondary transition-colors font-body text-label-sm"
+              >
+                FAQ
+              </Link>
+              <a
+                href="mailto:omshreeganeshplywood@gmail.com"
+                className="text-surface-container-highest/60 hover:text-secondary transition-colors font-body text-label-sm"
+              >
+                Email Us
               </a>
             </div>
           </div>
