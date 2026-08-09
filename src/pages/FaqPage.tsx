@@ -5,9 +5,9 @@ import useDocumentMeta from '../hooks/useDocumentMeta';
 
 const FaqPage: React.FC = () => {
   useDocumentMeta({
-    title: 'Plywood & Laminate FAQs | Grades, Delivery & Rates in Kandivali West',
+    title: 'Plywood & Sunmica FAQs | Rates, Grades & Delivery, Mumbai',
     description:
-      'Answers on plywood grades, MR vs BWR vs marine plywood, laminate designs, adhesives, bulk supply, shop timings and delivery across Mumbai from Om Shree Ganesh Plywood and Laminate, Kandivali West. Call +91 8087475826 for a same-day quote.',
+      'Plywood rates from ₹65/sq ft, sunmica ₹900–₹3,500 per sheet, MR vs BWR vs marine grades, and delivery across Mumbai — answered by a Kandivali West ply shop.',
     canonical: 'https://www.omshreeganeshplywood.in/faq',
   });
 

@@ -13,7 +13,10 @@ const FloatingActionButton: React.FC = () => {
       >
         <img
           src="/410199-PD37U2-851-removebg-preview.png"
-          alt="WhatsApp"
+          alt=""
+          aria-hidden="true"
+          width={48}
+          height={48}
           className="w-12 h-12 object-cover"
         />
       </a>

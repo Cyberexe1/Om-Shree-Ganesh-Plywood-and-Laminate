@@ -12,7 +12,11 @@ const AboutUs: React.FC = () => {
           {/* Main Image */}
           <img
             src="/images/Front_view_of_Shop.webp"
-            alt="Om Shree Ganesh Plywood Shop"
+            alt="Shopfront of Om Shree Ganesh Plywood and Laminate ply shop on Shri Sevantilal Khandwala Marg, Kandivali West, Mumbai"
+            width={800}
+            height={500}
+            loading="lazy"
+            decoding="async"
             className="rounded-3xl card-shadow w-full h-[400px] md:h-[500px] object-cover"
           />
 

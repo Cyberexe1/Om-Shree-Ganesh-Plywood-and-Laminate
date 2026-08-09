@@ -38,14 +38,24 @@ const faqs: FaqItem[] = [
       'MR (moisture resistant) plywood suits dry interior use such as wardrobes and bedroom furniture. BWR (boiling water resistant) plywood handles regular moisture exposure, making it right for kitchens. Marine plywood, certified to IS 710, offers the highest water resistance and is used where water contact is constant.',
   },
   {
+    question: 'What is the plywood rate in Kandivali West, Mumbai?',
+    answer:
+      'Plywood ranges from ₹65 to ₹120 per square foot at our Kandivali West ply shop. Canon plywood sits at the lower end, semi-marine plywood in the middle, and IS 710 marine plywood at the top. The final rate depends on thickness, brand and quantity, so call +91 8087475826 for today\'s confirmed price.',
+  },
+  {
+    question: 'How much does sunmica cost per sheet?',
+    answer:
+      'Sunmica, also sold as decorative laminate, ranges from ₹900 to ₹3,500 per sheet. That covers both 0.8 mm and 1 mm thicknesses across more than 500 designs, and acrylic sunmica is stocked as well for high-gloss kitchen shutters. Price depends on the design, finish and brand you pick.',
+  },
+  {
     question: 'Do you deliver plywood and laminates across Mumbai?',
     answer:
       'Yes. Delivery is free across Mumbai on bulk orders, and standard pan-Mumbai delivery takes 24 to 48 hours. We regularly deliver to Kandivali, Charkop, Malad, Borivali, Goregaon, Dahisar and Andheri.',
   },
   {
-    question: 'How many laminate designs do you have?',
+    question: 'How many sunmica and laminate designs do you have?',
     answer:
-      'The showroom carries over 500 decorative laminate designs, including wood grain, marble, stone and solid colour finishes in high-pressure laminate, plus water-resistant and termite-proof PVC laminate sheets for shutters and vanities.',
+      'The showroom carries over 500 sunmica designs in 0.8 mm and 1 mm, including wood grain, marble, stone and solid colour finishes, plus acrylic sunmica for high-gloss fronts and water-resistant, termite-proof PVC laminate sheets for shutters and vanities.',
   },
   {
     question: 'Which adhesives and hardware do you sell?',
@@ -84,10 +94,10 @@ const FaqSection: React.FC = () => {
             Questions & Answers
           </span>
           <h1 className="font-headline text-headline-md text-primary mb-4">
-            Plywood & Laminate FAQs — Kandivali West, Mumbai
+            Plywood & Sunmica FAQs — Kandivali West, Mumbai
           </h1>
           <p className="text-on-surface-variant font-body max-w-2xl mx-auto">
-            Straight answers on stock, plywood grades, laminate designs, delivery and pricing. Still unsure? Call
+            Straight answers on rates, plywood grades, sunmica designs, delivery and bulk supply. Still unsure? Call
             {' '}
             <a href="tel:+918087475826" className="text-secondary font-bold hover:underline">
               +91 8087475826

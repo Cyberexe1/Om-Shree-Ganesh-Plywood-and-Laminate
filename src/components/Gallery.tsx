@@ -96,7 +96,11 @@ const Gallery: React.FC = () => {
             >
               <img
                 src={item.image}
-                alt={item.title}
+                alt={`${item.title} — Om Shree Ganesh Plywood and Laminate, Kandivali West, Mumbai`}
+                width={640}
+                height={480}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">

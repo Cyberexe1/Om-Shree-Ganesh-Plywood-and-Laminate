@@ -16,13 +16,15 @@ const ProductShowcase: React.FC = () => {
     {
       id: 1,
       name: 'Waterproof Plywood',
-      description: 'IS 710 certified, BWR-grade waterproof plywood ideal for kitchen cabinets, wardrobes, and bathroom furniture.',
+      description:
+        'Canon, semi-marine and IS 710 marine plywood from ₹65 to ₹120 per sq ft — for kitchen cabinets, wardrobes and bathroom furniture.',
       image: '/images/2024-12-15.webp',
     },
     {
       id: 2,
-      name: 'Decorative Laminates',
-      description: 'Over 500 designs — wood grain, marble, solid colors. High-pressure laminates for modular furniture and wall panels.',
+      name: 'Sunmica & Decorative Laminates',
+      description:
+        'Over 500 sunmica designs in 0.8 mm and 1 mm, plus acrylic sunmica. Wood grain, marble and solid colours from ₹900 to ₹3,500 per sheet.',
       image: '/images/2025-05-23.webp',
     },
     {
@@ -73,9 +75,10 @@ const ProductShowcase: React.FC = () => {
     <section id="products" className="py-20 md:py-[80px] px-6 max-w-[1280px] mx-auto">
       {/* Section Header */}
       <div className="text-center mb-16">
-        <h2 className="font-headline text-headline-md text-primary mb-4">Plywood, Laminates & Interior Materials</h2>
+        <h2 className="font-headline text-headline-md text-primary mb-4">Plywood, Sunmica & Interior Materials</h2>
         <p className="text-on-surface-variant font-body max-w-xl mx-auto">
-          Browse our complete range of certified plywood, designer laminates, and construction-grade adhesives — sourced directly from top manufacturers.
+          Browse our complete range of certified plywood, sunmica and decorative laminates, and construction-grade
+          adhesives — sourced directly from top manufacturers and stocked at our ply shop in Kandivali West.
         </p>
       </div>
 
@@ -92,7 +95,11 @@ const ProductShowcase: React.FC = () => {
             <div className="h-64 overflow-hidden relative">
               <img
                 src={product.image}
-                alt={product.name}
+                alt={`${product.name} available at Om Shree Ganesh Plywood, Kandivali West, Mumbai`}
+                width={640}
+                height={480}
+                loading={index < 3 ? 'eager' : 'lazy'}
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import ProductShowcase from '../components/ProductShowcase';
+import Rates from '../components/Rates';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
@@ -12,9 +13,9 @@ import useDocumentMeta from '../hooks/useDocumentMeta';
 
 const HomePage: React.FC = () => {
   useDocumentMeta({
-    title: 'Plywood & Laminate Shop in Kandivali West, Mumbai | Om Shree Ganesh Plywood',
+    title: 'Om Shree Ganesh Plywood — Plywood & Sunmica, Kandivali West',
     description:
-      'Om Shree Ganesh Plywood & Laminate is a plywood, laminate and adhesive dealer on Shri Sevantilal Khandwala Marg, Kandivali West, Mumbai 400067. IS 710 waterproof plywood, 500+ decorative laminates, PVC sheets, MDF boards, Fevicol adhesives and timber. Open Mon–Sat 9 AM–8 PM. Free delivery across Mumbai on bulk orders. Call +91 8087475826.',
+      'Plywood ₹65–₹120/sq ft, sunmica ₹900–₹3,500 per sheet. Canon, semi-marine and marine plywood at our ply shop in Kandivali West, Mumbai. Call +91 8087475826.',
     canonical: 'https://www.omshreeganeshplywood.in/',
   });
 
@@ -24,6 +25,7 @@ const HomePage: React.FC = () => {
         <Navbar />
         <Hero />
         <ProductShowcase />
+        <Rates />
         <WhyChooseUs />
         <Gallery />
         <Testimonials />

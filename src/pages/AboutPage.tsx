@@ -29,9 +29,9 @@ const standards = [
 
 const AboutPage: React.FC = () => {
   useDocumentMeta({
-    title: 'About Us | Plywood & Laminate Dealer in Kandivali West Since 2020',
+    title: 'About Us | Plywood & Sunmica Dealer in Kandivali West',
     description:
-      'Om Shree Ganesh Plywood and Laminate has supplied certified plywood, laminates, adhesives and timber from Kandivali West, Mumbai since 2020. Over 500 customers, 5,000+ sheets sold, IS 710 and IS 303 certified materials, free delivery across Mumbai on bulk orders.',
+      'Om Shree Ganesh Plywood and Laminate has supplied certified plywood, sunmica and adhesives in Kandivali West, Mumbai since 2020. 500+ customers, 5,000+ sheets sold.',
     canonical: 'https://www.omshreeganeshplywood.in/about',
   });
 

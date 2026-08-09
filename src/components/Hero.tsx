@@ -26,12 +26,13 @@ const Hero: React.FC = () => {
 
         {/* Heading */}
         <h1 className="font-headline text-display-lg-mobile md:text-display-lg text-surface-bright mb-6 leading-tight">
-          Best Plywood & Laminate Shop in Kandivali West, Mumbai
+          Plywood & Sunmica Shop in Kandivali West, Mumbai
         </h1>
 
         {/* Subtitle */}
         <p className="font-body text-body-lg text-surface-container-highest/90 mb-10 max-w-2xl">
-          Premium waterproof plywood, decorative laminates, PVC sheets, MDF boards & Fevicol adhesives — all under one roof with free Mumbai delivery.
+          Plywood from ₹65 per sq ft and sunmica from ₹900 per sheet — Canon, semi-marine and marine plywood, 500+
+          sunmica designs, PVC sheets, MDF boards and Fevicol adhesives, all under one roof with free Mumbai delivery.
         </p>
 
         {/* CTA Buttons */}
