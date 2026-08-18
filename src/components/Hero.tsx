@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-start justify-center overflow-hidden"
     >
       {/* Background Image */}
       <div
@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 hero-gradient" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl text-center flex flex-col items-center px-6">
+      {/* Content — top padding clears the fixed navbar; bottom padding clears the stats bar */}
+      <div className="relative z-10 max-w-4xl text-center flex flex-col items-center px-6 pt-24 pb-48 md:pt-28 md:pb-52">
         {/* Badge */}
         <div className="bg-secondary/20 border border-secondary/30 backdrop-blur-md px-6 py-2 rounded-full mb-6">
           <span className="text-secondary-fixed-dim font-body text-label-md flex items-center gap-2">
@@ -25,12 +25,12 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="font-headline text-display-lg-mobile md:text-display-lg text-surface-bright mb-6 leading-tight">
+        <h1 className="font-headline text-[2rem] leading-tight md:text-display-lg text-surface-bright mb-4 md:mb-6">
           Plywood & Sunmica Shop in Kandivali West, Mumbai
         </h1>
 
         {/* Subtitle */}
-        <p className="font-body text-body-lg text-surface-container-highest/90 mb-10 max-w-2xl">
+        <p className="font-body text-body-md md:text-body-lg text-surface-container-highest/90 mb-8 md:mb-10 max-w-2xl">
           Plywood from ₹65 per sq ft and sunmica from ₹900 per sheet — Canon, semi-marine and marine plywood, 500+
           sunmica designs, PVC sheets, MDF boards and Fevicol adhesives, all under one roof with free Mumbai delivery.
         </p>
@@ -59,8 +59,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Stats Bar */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6">
+      {/* Stats Bar — sits at the bottom with enough room that the CTA buttons never reach it */}
+      <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6">
         <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl py-6 md:py-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="border-r border-white/10 px-4">
             <div className="font-headline text-headline-sm text-secondary-fixed-dim">5+ Years</div>
