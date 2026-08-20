@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.omshreeganeshplywood.in/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -16,7 +16,7 @@
     </image:image>
     <image:image>
       <image:loc>https://www.omshreeganeshplywood.in/images/2025-05-23.webp</image:loc>
-      <image:title>Decorative laminate designs available in Mumbai</image:title>
+      <image:title>Sunmica and decorative laminate designs available in Mumbai</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.omshreeganeshplywood.in/images/pvc-laminate.jpeg</image:loc>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://www.omshreeganeshplywood.in/about</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://www.omshreeganeshplywood.in/faq</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
